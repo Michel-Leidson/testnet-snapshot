@@ -29,7 +29,7 @@ if [ -z "$latest_snapshot" ]; then
     exit 1
 fi
 
-snapshot_file=$(echo "$latest_snapshot" | awk '{print $3}')
+snapshot_file=$(echo "$latest_snapshot" | awk '{print $4}')
 
 url="https://snap.stakepool.work/snapshots-stakepool/$snapshot_file"
 
